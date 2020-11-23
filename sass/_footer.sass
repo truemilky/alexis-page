@@ -1,0 +1,49 @@
+.footer 
+  background-color: $footer 
+  &__wrapper 
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    width: 25%
+    &-image
+      text-align: center
+      padding-top: 60px
+      margin-bottom: 60px
+  &__title 
+    font-family: 'Roboto-Medium'
+    padding: 30px 10px 30px 63px
+  &__text 
+    @include text-paragraph-grey
+    line-height: 20px  
+    color: $white
+    opacity: 70%  
+    padding: 0px 10px 43px 63px
+  &__socials 
+    display: flex
+    justify-content: center
+    margin-bottom: 48px
+    &-item 
+      margin-right: 10px
+@media (max-width: 1140px)
+  .footer
+    text-align: center
+    &__wrapper 
+      display: block
+    &__item 
+      width: 40%
+      margin: 0 auto
+      padding: 15px
+    &__socials 
+    &__title 
+      padding: 10px 
+    &__text 
+      padding: 10px
+@media (max-width: 768px) 
+  .footer
+    &__item 
+      width: 60%
+@media (max-width: 576px)  
+  .footer
+    &__item 
+      width: 80%                        

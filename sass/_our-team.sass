@@ -1,0 +1,157 @@
+.our-team
+  background-color: $grey-bcg
+  padding: 151px 0 149px 0
+  text-align: center
+  position: relative
+  &::before
+    content: ''
+    display: block
+    width: 342px
+    height: 200px
+    position: absolute
+    top: 0
+    right: 50%
+    left: 50% 
+    transform: translateX(-171px)
+    background-image: url('../img/our-team/our-team-numbers.png')
+  &__header
+  &__title 
+    @include text-title-50 
+    position: relative
+  &__text 
+    @include text-paragraph-18 
+    padding: 10px 15px 70px 15px
+  &__members 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+  &__person 
+    background-color: $white
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    margin: 10px
+    &-title 
+      font-size: 18px 
+      font-family: 'Roboto-Regular' 
+    &-text 
+      font-size: 13px
+      font-family: 'Roboto-Regular'
+      color: $grey
+      padding: 5px 0 12px 0  
+  &__about 
+    display: none
+    position: relative
+    text-align: left  
+    background-color: $white  
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    padding: 65px 0 75px 0
+    margin-top: 49px  
+    &-wrapper 
+      display: flex
+      align-items: center 
+    &-title 
+      @include text-title-20
+      padding: 0 0 30px 95px
+    &-text 
+      @include text-paragraph-grey
+      padding: 0 105px 0 95px  
+    &-inner
+      max-width: 100%
+      display: none
+      &:target 
+        display: flex
+        align-items: center
+  &__red-icon
+    & img
+      margin: 60px 25px 0 55px        
+  &__devider 
+    width: 2px
+    height: 151px
+    background-color: $light-grey  
+    margin: 50px 20px 0 0   
+  &__socials 
+    margin: 60px 0 0 10px
+    &-item 
+      & a 
+        @include text-paragraph-grey     
+#tab__01 
+  &::before 
+    content: ''
+    display: block
+    position: absolute
+    top: -40px
+    left: 105px
+    width: 60px
+    height: 40px
+    background-image: url('../img/our-team/our-team-triangle.png')
+#tab__02 
+  &::before 
+    content: ''
+    display: block
+    position: absolute
+    top: -40px
+    left: 390px
+    width: 60px
+    height: 40px
+    background-image: url('../img/our-team/our-team-triangle.png') 
+#tab__03 
+  &::before 
+    content: ''
+    display: block
+    position: absolute
+    top: -40px
+    left: 685px
+    width: 60px
+    height: 40px
+    background-image: url('../img/our-team/our-team-triangle.png')           
+#tab__04
+  &::before 
+    content: ''
+    display: block
+    position: absolute
+    top: -40px
+    left: 975px
+    width: 60px
+    height: 40px
+    background-image: url('../img/our-team/our-team-triangle.png')           
+@media (max-width: 1140px) 
+  .our-team  
+    &__members
+      display: inline-block
+      text-align: center
+    &__about 
+      &-wrapper 
+        display: block 
+        text-align: center
+      &-inner 
+        &:target 
+          display: block
+      &-title 
+        padding: 10px
+      &-text 
+        padding: 15px  
+    &__red-icon
+      & img 
+        margin: 15px 
+    &__devider 
+      display: block
+      margin: 0 auto
+      width: 151px
+      height: 2px    
+      margin-top: 25px   
+    &__socials 
+      margin: 40px  
+  #tab__01 
+    &::before
+      display: none  
+  #tab__01 
+    &::before 
+      display: none            
+  #tab__01 
+    &::before 
+      display: none    
+  #tab__01 
+    &::before 
+      display: none    
+.display-block
+  display: block      

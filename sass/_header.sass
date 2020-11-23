@@ -1,0 +1,84 @@
+.header 
+  background-color: #3f4049   
+  &__nav 
+    display: flex
+    justify-content: space-between
+    align-items: center 
+  &__menu 
+    & ul
+      display: flex
+      flex-wrap: wrap
+    & a 
+      display: block
+      @include text-menu
+      padding: 31px 11px 34px 11px
+      &:hover 
+        background-color: $white
+        color: #272727
+        transition: .5s all
+  &__offer 
+    text-align: center    
+    background: url('../img/header-bcg-img.jpg') center center/cover no-repeat
+    padding: 175px 0 177px 0
+  &__title 
+    @include text-title-big
+    padding-bottom: 49px
+  &__features 
+    width: 66.66%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-content: center
+    padding-top: 83px
+    &-info 
+      font-size: 18px
+      font-family: 'Roboto-Medium'
+      text-transform: uppercase
+      padding-top: 38px
+  &__button
+      margin-right: 10px    
+@media (max-width: 1140px)
+  .container 
+    width: 100%
+  .header 
+    &__nav
+      justify-content: center
+    &__logo
+      padding-right: 20px  
+@media (max-width: 992px)
+  .header 
+    &__nav
+      display: block
+      text-align: center
+    &__menu ul
+      justify-content: center
+    &__logo
+      padding-top: 30px  
+    &__offer
+      padding: 70px 0 
+    &__features 
+      flex-direction: column
+      justify-content: center  
+      &-item 
+        padding: 0 20px 30px 0 
+@media (max-width: 768px)
+  .header 
+    &__title 
+      padding: 0 20px 49px 20px
+    &__features
+      &-item
+        padding: 0 20px 30px 0  
+@media (max-width: 576px)
+  .header 
+    &__features 
+      justify-content: center
+
+
+
+
+
+
+  
+
+        

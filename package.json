@@ -1,0 +1,11 @@
+{
+  "name": "Alexis Homepage",
+  "version": "1.0.0",
+  "description": "My new project with practice in using Gulp",
+  "author": "Rodion Peniavskyi",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1"
+  },
+  "dependencies": {}
+}

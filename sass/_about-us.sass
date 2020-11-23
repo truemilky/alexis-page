@@ -1,0 +1,50 @@
+.about-us 
+  position: relative
+  &__img
+    padding: 149px 0 151px 0 
+  &__info 
+    width: 652px
+    position: absolute
+    top: 224px
+    right: 100px
+    background-color: #fff  
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05)
+    &::before
+      content: ''
+      position: absolute
+      display: inline-block
+      width: 256px
+      height: 199px
+      background-image: url('../img/about-us/about-us-numbers.png')
+      z-index: 0
+  &__title 
+    @include text-title-50
+    position: relative
+    padding-top: 94px
+    padding-left: 81px
+  &__text 
+    @include text-paragraph-grey
+    padding: 45px 83px 103px 81px
+  &__colorful
+    &-footer 
+      display: flex
+    &-item 
+      width: 25%
+      height: 3px  
+@media (max-width: 1140px)
+  .about-us
+    position: static
+    &__info 
+      margin: 0 auto
+      position: static
+    &__img 
+      text-align: center  
+      padding: 30px 0
+@media (max-width: 992px)
+
+@media (max-width: 768px)
+  .about-us
+    &__info 
+      width: 80%
+@media (max-width: 576px)
+
