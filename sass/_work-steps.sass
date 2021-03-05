@@ -1,17 +1,6 @@
 .work-steps
   padding: 150px 0 
   position: relative
-  &::before 
-    content: ''
-    display: block
-    position: absolute
-    top: 0
-    left: 50%
-    right: 50%
-    transform: translateX(-166px)
-    width: 332px
-    height: 201px
-    background-image: url('../img/work-steps/work-steps-numbers-05.png')
   &__heading
     text-align: center
     &-title 
@@ -22,7 +11,9 @@
       @include text-paragraph-18
       padding: 15px 15px 0px 15px 
       margin-bottom: 120px
-  &__wrapper
+  &__image 
+    & img 
+      padding: 10px
   &__step
     &-left 
       display: flex
@@ -84,7 +75,10 @@
   background-image: url('../img/work-steps/work-steps-numbers-04.png') 
 @media (max-width: 768px) 
   .work-steps 
+    padding: 50px 0
     text-align: center
+    &__heading-text
+      margin-bottom: 25px
     &__inner
       display: block
       padding: 30px 0 30px 0
@@ -112,3 +106,7 @@
         margin: 0 auto 
         &::before 
           display: none
+    &__image 
+      & img 
+        margin: 0 auto
+        padding: 0 10px      

@@ -14,16 +14,16 @@
     <div class="container">
       
       <!--Navigation Menu-->
-      <nav class="header__nav">
+      <div class="header__nav">
         <div class="header__logo">
           <a href="index.html"><img src="img/header-logo.png" alt="Alexis Homepage">
           </a>
         </div><!--/header__logo-->
         <div class="header__burger">
-          <span></span>
+          <span class="header__burger-line"></span>
         </div><!--/header__burger-->
-        <div class="header__menu">
-          <ul>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
             <li><a href="#about-us">About Us</a></li>
             <li><a href="#our-focus">Our Focus</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -34,11 +34,11 @@
             <li><a href="#our-blog">Blog</a></li>
             <li><a href="#in-touch">Contact</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       <!--Header Block-->
-      <article class="header__offer">
+      <section class="header__offer">
         <h1 class="header__title">We design things with love<br> and passion.</h1>
         <button type="button" class="header__button button">our works</button>
         <div class="header__features">
@@ -61,7 +61,7 @@
             </p>
           </div><!--/header__features-info-->
         </div><!--/header__features-->
-      </article>
+      </section>
     </div><!--/container-->
   </header>
   
@@ -177,42 +177,42 @@
           </div><!--/portfolio__text-->
         </div><!--/portfolio__info-->
         <div class="portfolio__examples">
-          <div class="portfolio__item">
+          <a href="#" class="portfolio__item">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-1.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__two">
+            <img src="img/Portfolio/portfolio-item-1.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__two">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-2.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__three">
+            <img src="img/Portfolio/portfolio-item-2.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__three">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-3.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__four">
+            <img src="img/Portfolio/portfolio-item-3.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__four">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-4.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__five">
+            <img src="img/Portfolio/portfolio-item-4.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__five">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-5.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__six">
+            <img src="img/Portfolio/portfolio-item-5.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__six">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-6.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__seven">
+            <img src="img/Portfolio/portfolio-item-6.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__seven">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-7.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__eight">
+            <img src="img/Portfolio/portfolio-item-7.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__eight">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-8.jpg" alt="Portfolio Example"></a>
-          </div>
-          <div class="portfolio__item project__nine">
+            <img src="img/Portfolio/portfolio-item-8.jpg" alt="Portfolio Example">
+          </a>
+          <a href="#" class="portfolio__item project__nine">
             <div class="portfolio__bcg"></div>
-            <a href="#"><img src="img/Portfolio/portfolio-item-9.jpg" alt="Portfolio Example"></a>
-          </div><!--/portfolio__item-->
+            <img src="img/Portfolio/portfolio-item-9.jpg" alt="Portfolio Example">
+          </a><!--/portfolio__item-->
         </div><!--/portfolio__examples-->
       </div><!--/container-->
     </section><!--/portfolio-->
@@ -226,9 +226,10 @@
         </div><!--/our-team__info-->
 
         <div class="our-team__tabs">
+          
+          
           <nav class="our-team__members">
-            
-            <a class="our-team__member__01" href="#tab__01" checked="checked">
+            <a class="our-team__member" href="#tab__01">
               <div class="our-team__person">
                 <div class="our-team__person-image">
                   <img src="img/our-team/our-team-person-1.jpg" alt="Michael Schmitt">
@@ -239,7 +240,7 @@
               </div><!--/our-team__person-->
             </a>
             
-            <a class="our-team__member__02"  href="#tab__02">
+            <a class="our-team__member"  href="#tab__02">
               <div class="our-team__person">
                 <div class="our-team__person-image">
                   <img src="img/our-team/our-team-person-2.jpg" alt="David Krämer">
@@ -250,7 +251,7 @@
               </div><!--/our-team__person-->
             </a>  
             
-            <a class="our-team__member__03" href="#tab__03">
+            <a class="our-team__member" href="#tab__03">
               <div class="our-team__person">
                 <div class="our-team__person-image">
                   <img src="img/our-team/our-team-person-3.jpg" alt="Anna Schröder">
@@ -261,7 +262,7 @@
               </div><!--/our-team__person-->
             </a>  
             
-            <a class="our-team__member__04" href="#tab__04">
+            <a class="our-team__member" href="#tab__04">
               <div class="our-team__person">
                 <div class="our-team__person-image">
                   <img src="img/our-team/our-team-person-4.jpg" alt="Jason Teichmann">
@@ -273,192 +274,189 @@
             </a>
               
           </nav><!--/our-team__members-->
+          <div class="our-team__about-inner active" id="tab__01">
+            <div class="our-team__triangle triangle__01"></div>
+            <div class="our-team__about-text-box">
+              <div class="our-team__about-title">Michael Schmitt</div>
+              <div class="our-team__about-text">
+                Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth agile development   branding. Backing facebook hackathon conversion   startup scrum project niche market  business-to-consumer paradigm shift traction.  Rockstar 
+                bandwidth twitter ownership success disruptive  series A financing user experience buyer client  social proof validation hypotheses. User experience  crowdfunding
+                facebook seed round A/B testing mass market. 
+              </div>
+            </div>
+            
+            <div class="our-team__red-icon">
+              <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
+            </div>
 
-          <div class="our-team__about">
-            <div class="our-team__about-wrapper">
-              <div class="our-team__about-info">
-                
-                <div class="our-team__about-inner" id="tab__01">
-                  <div class="our-team__about-text-box">
-                    <div class="our-team__about-title">Michael Schmitt</div>
-                    <div class="our-team__about-text">
-                      Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth<br> agile development   branding. Backing facebook hackathon conversion   startup scrum<br> project niche market  business-to-consumer paradigm shift traction.  Rockstar<br> 
-                      bandwidth twitter ownership success disruptive  series A financing user experience<br> buyer client  social proof validation hypotheses. User experience  crowdfunding<br> 
-                      facebook seed round A/B testing mass market. 
-                    </div>
-                  </div>
-                  
-                  <div class="our-team__red-icon">
-                    <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
-                  </div>
-    
-                  <div class="our-team__devider"></div>
-    
-                  <ul class="our-team__socials">
-                    <li class="our-team__socials-item">
-                      <a href="http://facebook.com/Michael Schmitt.html">
-                        <img src="img/our-team/socials/facebook.png" alt="Facebook">
-                        Facebook
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://twitter.com/Michael Schmitt.html">
-                        <img src="img/our-team/socials/twitter.png" alt="Twitter">
-                        Twitter
-                      </a>
-                  </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://linkedin.com/Michael Schmitt.html">
-                        <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
-                        LinkedIn
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://instagram.com/Michael Schmitt.html">
-                        <img src="img/our-team/socials/instagram.png" alt="Instagram">
-                        Instagram
-                      </a>
-                    </li>
-                  </ul>
-                </div>  
-                
-                <div class="our-team__about-inner" id="tab__02">
-                  
-                  <div class="our-team__about-text-box">
-                    <div class="our-team__about-title">David Krämer</div>
-                    <div class="our-team__about-text">
-                      Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth<br> agile development   branding. Backing facebook hackathon conversion   startup scrum<br> project niche market  business-to-consumer paradigm shift traction.  Rockstar<br> 
-                      bandwidth twitter ownership success disruptive  series A financing user experience<br> buyer client  social proof validation hypotheses. User experience  crowdfunding<br> 
-                      facebook seed round A/B testing mass market. 
-                    </div>
-                  </div>
+            <div class="our-team__devider"></div>
 
-                  <div class="our-team__red-icon">
-                    <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
-                  </div>
-    
-                  <div class="our-team__devider"></div>
-    
-                  <ul class="our-team__socials">
-                    <li class="our-team__socials-item">
-                      <a href="http://facebook.com/David Krämer.html">
-                        <img src="img/our-team/socials/facebook.png" alt="Facebook">
-                        Facebook
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://twitter.com/David Krämer.html">
-                        <img src="img/our-team/socials/twitter.png" alt="Twitter">
-                        Twitter
-                      </a>
-                  </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://linkedin.com/David Krämer.html">
-                        <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
-                        LinkedIn
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://instagram.com/David Krämer.html">
-                        <img src="img/our-team/socials/instagram.png" alt="Instagram">
-                        Instagram
-                      </a>
-                    </li>
-                  </ul>
-                </div>  
-                
-                <div class="our-team__about-inner" id="tab__03">
-                  <div class="our-team__about-text-box">
-                    <div class="our-team__about-title">Anna Schröder</div>
-                    <div class="our-team__about-text">
-                      Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth<br> agile development branding. Backing facebook hackathon conversion startup scrum<br> project niche market business-to-consumer paradigm shift traction. Rockstar<br> 
-                      bandwidth twitter ownership success disruptive series A financing user experience<br> buyer client social proof validation hypotheses. User experience crowdfunding<br> 
-                      facebook seed round A/B testing mass market. 
-                    </div>
-                  </div>
+            <ul class="our-team__socials">
+              <li class="our-team__socials-item">
+                <a href="http://facebook.com/Michael Schmitt.html">
+                  <img src="img/our-team/socials/facebook.png" alt="Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://twitter.com/Michael Schmitt.html">
+                  <img src="img/our-team/socials/twitter.png" alt="Twitter">
+                  Twitter
+                </a>
+            </li>
+              <li class="our-team__socials-item">
+                <a href="http://linkedin.com/Michael Schmitt.html">
+                  <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://instagram.com/Michael Schmitt.html">
+                  <img src="img/our-team/socials/instagram.png" alt="Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>  
 
-                  <div class="our-team__red-icon">
-                    <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
-                  </div>
-    
-                  <div class="our-team__devider"></div>
-    
-                  <ul class="our-team__socials">
-                    <li class="our-team__socials-item">
-                      <a href="http://facebook.com/Anna Schröder.html">
-                        <img src="img/our-team/socials/facebook.png" alt="Facebook">
-                        Facebook
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://twitter.com/Anna Schröder.html">
-                        <img src="img/our-team/socials/twitter.png" alt="Twitter">
-                        Twitter
-                      </a>
-                  </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://linkedin.com/Anna Schröder.html">
-                        <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
-                        LinkedIn
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://instagram.com/Anna Schröder.html">
-                        <img src="img/our-team/socials/instagram.png" alt="Instagram">
-                        Instagram
-                      </a>
-                    </li>
-                  </ul>
-                </div>  
-                
-                <div class="our-team__about-inner" id="tab__04">
+          <div class="our-team__about-inner" id="tab__02">
+            <div class="our-team__triangle triangle__02"></div>
+            
+            <div class="our-team__about-text-box">
+              <div class="our-team__about-title">David Krämer</div>
+              <div class="our-team__about-text">
+                Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth agile development   branding. Backing facebook hackathon conversion   startup scrum project niche market  business-to-consumer paradigm shift traction.  Rockstar 
+                bandwidth twitter ownership success disruptive  series A financing user experience buyer client  social proof validation hypotheses. User experience  crowdfunding
+                facebook seed round A/B testing mass market. 
+              </div>
+            </div>
 
-                  <div class="our-team__about-text-box">
-                    <div class="our-team__about-title">Jason Teichmann</div>
-                    <div class="our-team__about-text">
-                      Monetization first mover advantage iPad. Interaction design buzz handshake. Stealth<br> agile development branding. Backing facebook hackathon conversion startup scrum<br> project niche market business-to-consumer paradigm shift traction. Rockstar<br> 
-                      bandwidth twitter ownership success disruptive series A financing user experience<br> buyer client social proof validation hypotheses. User experience crowdfunding<br> 
-                      facebook seed round A/B testing mass market. 
-                    </div><!--/our-team__about-text-->
-                  </div>
+            <div class="our-team__red-icon">
+              <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
+            </div>
 
-                  <div class="our-team__red-icon">
-                    <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
-                  </div>
-    
-                  <div class="our-team__devider"></div>
-    
-                  <ul class="our-team__socials">
-                    <li class="our-team__socials-item">
-                      <a href="http://facebook.com/Jason Teichmann.html">
-                        <img src="img/our-team/socials/facebook.png" alt="Facebook">
-                        Facebook
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://twitter.com/Jason Teichmann.html">
-                        <img src="img/our-team/socials/twitter.png" alt="Twitter">
-                        Twitter
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://linkedin.com/Jason Teichmann.html">
-                        <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
-                        LinkedIn
-                      </a>
-                    </li>
-                    <li class="our-team__socials-item">
-                      <a href="http://instagram.com/Jason Teichmann.html">
-                        <img src="img/our-team/socials/instagram.png" alt="Instagram">
-                        Instagram
-                      </a>
-                    </li>
-                  </ul>
-                    
-                </div><!--/our-team__about-inner-->  
-              </div><!--/our-team__about-info-->
-            </div><!--/our-team__about-wrapper-->
-          </div><!--/our-team__about-->
+            <div class="our-team__devider"></div>
+
+            <ul class="our-team__socials">
+              <li class="our-team__socials-item">
+                <a href="http://facebook.com/David Krämer.html">
+                  <img src="img/our-team/socials/facebook.png" alt="Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://twitter.com/David Krämer.html">
+                  <img src="img/our-team/socials/twitter.png" alt="Twitter">
+                  Twitter
+                </a>
+            </li>
+              <li class="our-team__socials-item">
+                <a href="http://linkedin.com/David Krämer.html">
+                  <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://instagram.com/David Krämer.html">
+                  <img src="img/our-team/socials/instagram.png" alt="Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>  
+          
+          <div class="our-team__about-inner" id="tab__03">
+            <div class="our-team__triangle triangle__03"></div>
+            <div class="our-team__about-text-box">
+              <div class="our-team__about-title">Anna Schröder</div>
+              <div class="our-team__about-text">
+                Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth agile development   branding. Backing facebook hackathon conversion   startup scrum project niche market  business-to-consumer paradigm shift traction.  Rockstar 
+                bandwidth twitter ownership success disruptive  series A financing user experience buyer client  social proof validation hypotheses. User experience  crowdfunding
+                facebook seed round A/B testing mass market. 
+              </div>
+            </div>
+
+            <div class="our-team__red-icon">
+              <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
+            </div>
+
+            <div class="our-team__devider"></div>
+
+            <ul class="our-team__socials">
+              <li class="our-team__socials-item">
+                <a href="http://facebook.com/Anna Schröder.html">
+                  <img src="img/our-team/socials/facebook.png" alt="Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://twitter.com/Anna Schröder.html">
+                  <img src="img/our-team/socials/twitter.png" alt="Twitter">
+                  Twitter
+                </a>
+            </li>
+              <li class="our-team__socials-item">
+                <a href="http://linkedin.com/Anna Schröder.html">
+                  <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://instagram.com/Anna Schröder.html">
+                  <img src="img/our-team/socials/instagram.png" alt="Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>  
+          
+          <div class="our-team__about-inner" id="tab__04">
+            <div class="our-team__triangle triangle__04"></div>
+
+            <div class="our-team__about-text-box">
+              <div class="our-team__about-title">Jason Teichmann</div>
+              <div class="our-team__about-text">
+                Monetization first mover advantage iPad. Interaction  design buzz handshake. Stealth agile development   branding. Backing facebook hackathon conversion   startup scrum project niche market  business-to-consumer paradigm shift traction.  Rockstar 
+                bandwidth twitter ownership success disruptive  series A financing user experience buyer client  social proof validation hypotheses. User experience  crowdfunding
+                facebook seed round A/B testing mass market. 
+              </div><!--/our-team__about-text-->
+            </div>
+
+            <div class="our-team__red-icon">
+              <img src="img/our-team/our-team-red-icon.png" alt="Red Icon">
+            </div>
+
+            <div class="our-team__devider"></div>
+
+            <ul class="our-team__socials">
+              <li class="our-team__socials-item">
+                <a href="http://facebook.com/Jason Teichmann.html">
+                  <img src="img/our-team/socials/facebook.png" alt="Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://twitter.com/Jason Teichmann.html">
+                  <img src="img/our-team/socials/twitter.png" alt="Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://linkedin.com/Jason Teichmann.html">
+                  <img src="img/our-team/socials/linkedin.png" alt="Linkedin">
+                  LinkedIn
+                </a>
+              </li>
+              <li class="our-team__socials-item">
+                <a href="http://instagram.com/Jason Teichmann.html">
+                  <img src="img/our-team/socials/instagram.png" alt="Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+              
+          </div><!--/our-team__about-inner-->  
+
         </div><!--/our-team__tabs-->  
       </div><!--/container-->
     </section>
@@ -961,19 +959,19 @@
           <div class="footer__item-image">
             <img src="img/footer/footer-logo.png" alt="Alexis Logo">
           </div>
-          <div class="bottom red-bcg"></div>
+          <div class="footer__bottom red-bcg"></div>
         </div>
         <div class="footer__item">
           <div class="footer__title green">Alexis LLC.</div>
           <div class="footer__text">4125 Brighton Circle Road<br>
             Little Falls, MN 56345</div>
-          <div class="bottom green-bcg"></div>
+          <div class="footer__bottom green-bcg"></div>
         </div>
         <div class="footer__item">
           <div class="footer__title purple">Alexis LLC UK.</div>
           <div class="footer__text">81 Golden Knowes Road<br>
             FRESHFIELD L37 6TP</div>
-          <div class="bottom purple-bcg"></div>
+          <div class="footer__bottom purple-bcg"></div>
         </div>
         <div class="footer__item">
           <div class="footer__title orange">Follow Us.</div>
@@ -999,7 +997,7 @@
               </a>
             </div><!--/footer__socials-item-->
           </div><!--/footer__socials-->
-          <div class="bottom orange-bcg"></div>
+          <div class="footer__bottom orange-bcg"></div>
         </div><!--/footer__item-->
       </div><!--/footer__wrapper-->
     </div><!--/container-->

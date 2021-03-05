@@ -2,17 +2,6 @@
   padding: 146px 0 150px 0
   background-color: $black-menu
   position: relative
-  &::before 
-    content: ''
-    display: block
-    width: 310px
-    height: 198px
-    position: absolute
-    top: 0
-    left: 50%
-    right: 50% 
-    transform: translateX(-155px)
-    background-image: url(../img/testimonials/testimonial-numbers.png)
   &__heading 
     text-align: center
     &-title 
@@ -131,9 +120,14 @@
   
 @media (max-width: 768px)
   .testimonials
+    padding: 50px 0
     &__item 
       min-width: 100%
       margin: 0
 @media (max-width: 576px)  
+  .testimonials
+    &__item 
+      &-text 
+        padding: 42px 15px 38px 15px
   
 

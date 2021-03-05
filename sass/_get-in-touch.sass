@@ -2,17 +2,6 @@
   position: relative
   background-color: $dark-grey
   padding: 147px 0px 149px 0px 
-  &::before 
-    content: ''
-    display: block
-    width: 275px
-    height: 199px
-    position: absolute
-    top: 0
-    left: 50%
-    right: 50%
-    transform: translateX(-137.5px)
-    background-image: url('../img/get-in-touch/get-in-touch-numbers.png')
   &__heading 
     text-align: center
     &-title 
@@ -70,10 +59,11 @@
           width: 92%  
 @media (max-width: 768px)   
   .in-touch 
+    padding: 50px 0
     &__form 
       &-item
-        width: 90%
+        width: 70%
         margin: 0
         margin-bottom: 10px
         &-big 
-          width: 90%   
+          width: 70%   

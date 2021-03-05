@@ -2,17 +2,6 @@
   background-color: $grey-bcg 
   padding: 149px 0 152px 0
   position: relative
-  &::before 
-    content: ''
-    width: 328px
-    height: 205px
-    display: block
-    position: absolute
-    top: 0
-    left: 50% 
-    right: 50% 
-    transform: translateX(-164px)
-    background-image: url('../img/pricing-table/pricing-table-numbers.png')
   &__heading 
     text-align: center
     &-title 
@@ -30,6 +19,7 @@
   &__item 
     width: 25%
     background-color: $white 
+    margin: 20px
     padding-bottom: 35px
     &-title 
       @include text-title-20
@@ -63,6 +53,8 @@
     line-height: 40px    
     & span 
       font-family: 'Roboto-Bold' 
+      & img 
+        margin: 0 auto
 .border-red
   border-color: $red
 .border-purple
@@ -73,15 +65,20 @@
   background-color: $purple    
 @media (max-width: 992px)
   .pricing-table 
+    &__plans 
+      justify-content: center
+      padding-top: 20px
     &__item 
       width: 33.3%
 @media (max-width: 768px)
   .pricing-table 
+    padding: 50px 0
+    &__plans 
+      flex-direction: column
     &__item 
       width: 50%
-      margin: 0 auto
+      margin: 20px auto  
 @media (max-width: 576px)  
   .pricing-table 
     &__item 
       width: 80%
-      margin: 0 auto 

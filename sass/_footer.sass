@@ -5,33 +5,45 @@
     justify-content: space-between
     align-items: center
   &__item
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     width: 25%
+    min-height: 165px
     &-image
-      text-align: center
-      padding-top: 60px
-      margin-bottom: 60px
+      & img 
+        margin: 0 auto
   &__title 
     font-family: 'Roboto-Medium'
-    padding: 30px 10px 30px 63px
+    margin-bottom: 10px
   &__text 
     @include text-paragraph-grey
     line-height: 20px  
     color: $white
     opacity: 70%  
-    padding: 0px 10px 43px 63px
+
   &__socials 
     display: flex
     justify-content: center
-    margin-bottom: 48px
     &-item 
-      margin-right: 10px
+      margin: 10px
+  &__bottom 
+    position: absolute
+    display: flex
+    width: 100%
+    height: 3px
+    bottom: 0    
+
 @media (max-width: 1140px)
   .footer
     text-align: center
     &__wrapper 
       display: block
     &__item 
-      width: 40%
+      width: 100%
+      max-width: 285px
       margin: 0 auto
       padding: 15px
     &__socials 
@@ -39,11 +51,8 @@
       padding: 10px 
     &__text 
       padding: 10px
+    &__bottom  
 @media (max-width: 768px) 
-  .footer
-    &__item 
-      width: 60%
+
 @media (max-width: 576px)  
-  .footer
-    &__item 
-      width: 80%                        
+                

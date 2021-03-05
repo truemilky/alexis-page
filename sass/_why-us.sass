@@ -1,17 +1,6 @@
 .why-us 
   padding: 145px 0 150px 0
   position: relative
-  &::before 
-    content: ''
-    display: block
-    width: 330px
-    height: 211px
-    position: absolute
-    top: 0
-    right: 50%
-    left: 50% 
-    transform: translateX(-165px)
-    background-image: url(../img/why-us/why-us-numbers.png)
   &__heading 
     text-align: center
     &-title 
@@ -60,16 +49,26 @@
 
 @media (max-width: 768px) 
   .why-us 
+    padding: 50px 0
+    &__heading 
+      padding-bottom: 20px
     &__reasons 
       display: block
       text-align: center 
     &__item 
       width: 100%
+      padding: 15px
       &-header 
         display: block
+        & img 
+          margin: 0 auto
+          margin-bottom: 15px
+      &-title 
+        padding-left: 0    
     &__footer 
       display: block
       text-align: center 
+      margin-top: 30px
       &-text 
         margin-bottom: 35px
   .button-one 
